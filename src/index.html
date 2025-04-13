@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stanton System Distance Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Stanton System Distance Calculator</h1>
+
+    <p>Calculates straight-line distance (in Gm) based on a 2D model using user-provided in-game orbital distances (Hur: 12.72 Gm, Cru: 19.02 Gm, Arc: 28.79 Gm, Mic: 43.32 Gm). Aaron Halo estimated between 30-40 Gm. L-points are approximated.</p>
+    <p><strong>Note:</strong> Planet order is Hurston (0.4 AU), Crusader (0.7 AU), ArcCorp (1.0 AU), MicroTech (1.4 AU). Aaron Halo estimated between 1.1 AU (164558 Gm) and 1.6 AU (239357 Gm).</p>
+
+    <div class="controls">
+        <label for="start-location">Start:</label>
+        <select id="start-location"></select>
+
+        <label for="end-location">End:</label>
+        <select id="end-location"></select>
+
+        <button id="calculate-button">Calculate Distance</button>
+    </div>
+
+    <div id="results">
+        <h2>Results:</h2>
+        <p id="distance-result">Distance: ---</p>
+        <p id="halo-result">Aaron Halo Crossing: ---</p>
+    </div>
+
+    <div id="map-container">
+        <h2>System Map (2D Representation)</h2>
+        <canvas id="system-map" width="900" height="900"></canvas>
+        <p style="text-align: center; font-size: 0.8em;">Star at center. Distances are approximate.</p>
+        <div id="rotation-control">
+            <label for="rotation-slider">Rotate Map:</label>
+            <input type="range" id="rotation-slider" min="0" max="360" value="210" step="1">
+            <span id="rotation-value">0</span>°
+        </div>
+         </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

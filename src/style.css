@@ -1,0 +1,120 @@
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2 {
+    color: #555;
+    text-align: center; /* Center main headings */
+}
+
+p {
+    text-align: center; /* Center paragraphs */
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px; /* Limit paragraph width */
+}
+
+.controls {
+    background-color: #e9e9e9;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 20px auto; /* Center controls block */
+    text-align: center;
+    max-width: 800px;
+}
+
+.controls label {
+    margin-right: 5px;
+    margin-left: 10px;
+}
+
+.controls select {
+    padding: 8px;
+    margin-right: 15px;
+    min-width: 150px;
+}
+
+.controls button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.controls button:hover {
+    background-color: #0056b3;
+}
+
+#results {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 20px auto; /* Center results block */
+    max-width: 800px;
+    text-align: left; /* Align text inside results block */
+}
+
+#results h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+
+#results p {
+    margin: 8px 0;
+    text-align: left; /* Keep result paragraphs left-aligned */
+}
+
+strong {
+    color: #d9534f;
+}
+
+#map-container {
+    margin: 30px auto; /* Center map container */
+    text-align: center;
+    max-width: fit-content; /* Make container fit canvas + controls */
+}
+
+#system-map {
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+    max-width: 100%; /* Allow shrinking */
+    display: block; /* Remove extra space below canvas */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#rotation-control {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #e9e9e9;
+    border-radius: 5px;
+     display: inline-block; /* Make background fit content */
+}
+
+#rotation-control label {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+#rotation-control input[type="range"] {
+    width: 200px;
+    vertical-align: middle;
+}
+
+#rotation-control span {
+    display: inline-block;
+    min-width: 25px;
+    text-align: right;
+    font-weight: bold;
+    margin-left: 5px;
+    vertical-align: middle;
+}
